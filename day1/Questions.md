@@ -1,7 +1,7 @@
 <a id="questions"> 🙋 Questions </a>
 How much is the current memory capacity of a canister? 
 A: 48GB
-<a id="questions"> 🙋 Questions </a>
+
 How much is the current memory capacity of a canister? Answer : 48 GB (December update -)
 What is the issue with the following code sample? "let" introduces an immutable declaration, need to use "var" instead of "let" 
 actor {
@@ -10,7 +10,7 @@ actor {
     counter := counter + 1;
   };
 }
-<a id="questions"> 🙋 Questions </a>
+
 What is the issue with the following code sample? The return value of async () is not defined.
 actor {
   var message : Text = 0;
@@ -23,10 +23,10 @@ actor {
     return(message);
   };
 }
-<a id="questions"> 🙋 Questions </a>
+
 False or True: we can remove the keyword async for return argument of a query function since queries are faster to answer. FALSE
 # Coding challenges
-<a id="questions"> 🙋 Questions </a>
+
 Write a function multiply that takes two natural numbers and returns the product.
 actor {
 var n : Nat = 0;
