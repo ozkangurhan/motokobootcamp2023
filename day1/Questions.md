@@ -37,6 +37,7 @@ var n : Nat = 0;
     return result;
   };
 }
+
 Write a function volume that takes a natural number n and returns the volumte of a cube with side length n
 actor {
   public query func volume(n : Nat) : async Nat {
@@ -48,6 +49,7 @@ actor {
   //   return "Hello, " # name # "!";
   // };
  }
+ 
  Write a function hours_to_minutes that takes a number of hours n and returns the number of minutes
  actor {
   public query func hours_to_minutes(n : Nat) : async Nat {
@@ -55,6 +57,7 @@ actor {
     result;
   } 
 }}
+
 Write two functions set_counter & get_counter
 actor {
   var counter : Nat = 0;
@@ -65,6 +68,7 @@ actor {
     counter;
   };
 }
+
 Write a function test_divide that takes two natural numbers n and m and returns a boolean indicating if n divides m
 actor {
  public query func test_divide(n: Nat, m : Nat) : async Bool {
@@ -76,6 +80,7 @@ actor {
       false;
   };
 };
+
 Write a function is_even that takes a natural number n and returns a boolean indicating if n is even
 actor {
  public query func test_divide(n: Nat) : async Bool {
