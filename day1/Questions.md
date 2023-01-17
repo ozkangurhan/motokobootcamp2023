@@ -2,7 +2,8 @@
 1.How much is the current memory capacity of a canister? 
 A: 48 GB (December 2022 update)
 
-What is the issue with the following code sample? "let" introduces an immutable declaration, need to use "var" instead of "let" 
+2.What is the issue with the following code sample? 
+A: "let" introduces an immutable declaration, need to use "var" instead of "let" 
 
 actor {
   let counter : Nat = 0;
@@ -11,7 +12,8 @@ actor {
   };
 }
 
-What is the issue with the following code sample? The return value of async () is not defined.
+3. What is the issue with the following code sample? 
+A: The return value of async () is not defined.
 
 actor {
   var message : Text = 0;
