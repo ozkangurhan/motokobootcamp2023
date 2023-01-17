@@ -1,15 +1,17 @@
-# <a id="questions"> 🙋 Questions </a>
-1. How much is the current memory capacity of a canister? 
+<a id="questions"> 🙋 Questions </a>
+How much is the current memory capacity of a canister? 
 A: 48GB
-# How much is the current memory capacity of a canister? Answer : 48 GB (December update -)
-# What is the issue with the following code sample? "let" introduces an immutable declaration, need to use "var" instead of "let" 
+<a id="questions"> 🙋 Questions </a>
+How much is the current memory capacity of a canister? Answer : 48 GB (December update -)
+What is the issue with the following code sample? "let" introduces an immutable declaration, need to use "var" instead of "let" 
 actor {
   let counter : Nat = 0;
   public func increment_counter() : async () {
     counter := counter + 1;
   };
 }
-# What is the issue with the following code sample? The return value of async () is not defined.
+<a id="questions"> 🙋 Questions </a>
+What is the issue with the following code sample? The return value of async () is not defined.
 actor {
   var message : Text = 0;
   public query func change_message(new_message : Text) : async () {
@@ -21,9 +23,11 @@ actor {
     return(message);
   };
 }
-# False or True: we can remove the keyword async for return argument of a query function since queries are faster to answer. FALSE
+<a id="questions"> 🙋 Questions </a>
+False or True: we can remove the keyword async for return argument of a query function since queries are faster to answer. FALSE
 # Coding challenges
-# Write a function multiply that takes two natural numbers and returns the product.
+<a id="questions"> 🙋 Questions </a>
+Write a function multiply that takes two natural numbers and returns the product.
 actor {
 var n : Nat = 0;
   var m : Nat = 0;
