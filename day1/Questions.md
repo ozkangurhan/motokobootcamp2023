@@ -12,7 +12,7 @@ actor {
   };
 }
 
-3. What is the issue with the following code sample? 
+3.What is the issue with the following code sample? 
 A: The return value of async () is not defined.
 
 actor {
