@@ -1,4 +1,4 @@
-<a id="questions"> 🙋 Questions </a>
+
 How much is the current memory capacity of a canister? 
 A: 48GB
 
