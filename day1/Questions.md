@@ -1,3 +1,6 @@
+# <a id="questions"> 🙋 Questions </a>
+1. How much is the current memory capacity of a canister? 
+A: 48GB
 # How much is the current memory capacity of a canister? Answer : 48 GB (December update -)
 # What is the issue with the following code sample? "let" introduces an immutable declaration, need to use "var" instead of "let" 
 actor {
