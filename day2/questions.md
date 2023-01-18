@@ -4,7 +4,7 @@
 
 A: Principal account
 
-**2.What is the subnet of the canister with the id:…? How many nodes are running on this subnet?**
+**2.What is the subnet of the canister with the id:mwrha-maaaa-aaaab-qabqq-cai? How many nodes are running on this subnet?**
 
 A:The controller ID: "a3hwk-dyaaa-aaaab-qaa4a-cai" The subnetID: "pae4o-o6dxf-xki7q-ezclx-znyd6-fnk6w-vkv5z-5lfwh-xym2i-otrrw-fqe"  with 16 nodes.
 
