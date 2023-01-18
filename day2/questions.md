@@ -70,7 +70,8 @@ actor {
       cumulative += k;
     };
     cumulative / array.size();
-};
+ }
+}
 ```
 **2.Character count: Write a function that takes in a string and a character, and returns the number of occurrences of that character in the string.**
 ```
