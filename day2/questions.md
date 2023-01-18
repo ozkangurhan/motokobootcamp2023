@@ -100,9 +100,9 @@ actor {
 public query func factorial(n: Nat) : async Nat {
     var result: Nat = 1;
     for (k in Iter.range(1, n)) {
-      result *= k;
+      calculation *= k;
     };
-    result;
+    calculation;
   };
 ``` 
 **4.Write a function number_of_words that takes a sentence and returns the number of words in the sentence.**
