@@ -101,7 +101,7 @@ import Nat "mo:base/Nat";
 import Iter "mo:base/Iter";
 actor {
 public query func factorial(n: Nat) : async Nat {
-    var result: Nat = 1;
+    var calculation: Nat = 1;
     for (k in Iter.range(1, n)) {
       calculation *= k;
     };
