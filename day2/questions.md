@@ -58,6 +58,9 @@ actor {
 
 **1.Write a function average_array that takes an array of integers and returns the average value of the elements in the array.**
 ```
+average_array(array : [Int]) -> async Int. 
+```
+```
 import Array "mo:base/Array";
 import Int "mo:base/Int";
 actor {
