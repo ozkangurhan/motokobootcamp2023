@@ -2,7 +2,7 @@
 
 **1.Who controls the ledger canister?**
 
-A: Principal account
+A: NNS
 
 **2.What is the subnet of the canister with the id:mwrha-maaaa-aaaab-qabqq-cai? How many nodes are running on this subnet?**
 
