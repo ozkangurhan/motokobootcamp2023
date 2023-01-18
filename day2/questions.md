@@ -65,11 +65,11 @@ import Array "mo:base/Array";
 import Int "mo:base/Int";
 actor {
   public query func average_array(array: [Int]) : async Int {
-    var sum: Int = 0;
+    var cumulative: Int = 0;
     for (k in array.vals()) {
-      sum += k;
+      cumulative += k;
     };
-    sum / array.size();
+    cumulative / array.size();
 };
 ```
 **2.Character count: Write a function that takes in a string and a character, and returns the number of occurrences of that character in the string.**
