@@ -186,7 +186,6 @@ public func convert_to_binary(n : Nat) : async Text {
      var rep : [Nat] = List.toArray(lc);
      for (value in rep.vals()){
       ct := ct 
-      Nat.toText(value);
     };
     return ct;
   };
