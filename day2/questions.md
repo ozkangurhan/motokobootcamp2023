@@ -119,8 +119,8 @@ actor {
 public query func number_of_words(t: Text) : async Nat {
     var number: Nat = 0;
     var space : Text = " ";
-    let words = Text.split(t, #char ' ');
-    Iter.iterate<Text>(words, func(x, _index) {
+    let wrd = Text.split(t, #char ' ');
+    Iter.iterate<Text>(wrd, func(x, _index) {
       number += 1;
     });
     number;
