@@ -46,7 +46,7 @@ var n : Nat = 0;
   };
 }
 ```
-Write a function volume that takes a natural number n and returns the volumte of a cube with side length n
+Write a function volume that takes a natural number n and returns the volume of a cube with length n
 ```
 actor {
   public query func volume(n : Nat) : async Nat {
