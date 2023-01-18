@@ -117,13 +117,13 @@ import Nat "mo:base/Nat";
 import Text "mo:base/Text";
 actor {
 public query func number_of_words(t: Text) : async Nat {
-    var count: Nat = 0;
+    var number: Nat = 0;
     var space : Text = " ";
     let words = Text.split(t, #char ' ');
     Iter.iterate<Text>(words, func(x, _index) {
-      count += 1;
+      number += 1;
     });
-    count;
+    number;
   };
 ``` 
 **5. Write a function find_duplicates that takes an array of natural numbers and returns a new array containing all duplicate numbers. The order of the elements in the returned array should be the same as the order of the first occurrence in the input array.**
