@@ -1,15 +1,19 @@
  #<a id="questions"> 🙋 Questions </a>
 
 1.Who controls the ledger canister?
+
 A: Account owner
 
 2.What is the subnet of the canister with the id:…? How many nodes are running on this subnet?
+
 A:
 
 3.I have a neutron with 10 ICPs locked with a dissolve delay of 4 years - my neuron has been locked for 2 years. What is my expected voting power?
+
 A: 
 
 4.What is the issue with the following code sample? 
+
 A:  works when added “import Nat “mo:base/Nat” “in the beginning
 ```
 actor {
@@ -23,6 +27,7 @@ actor {
 }
 ```
 5.What is the issue with the following code sample? 
+
 A: replace “var Text” with “Text”
 ```
 actor {
@@ -35,6 +40,7 @@ actor {
 }
 ```
 6.What is wrong with the following code?
+
 A: Add “import Array “mo:base/Array” “ in the beginning.
 ```
 actor {
