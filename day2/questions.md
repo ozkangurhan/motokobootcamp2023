@@ -58,7 +58,19 @@ actor {
 
 1.Write a function average_array that takes an array of integers and returns the average value of the elements in the array.
 ```
-
+import Array "mo:base/Array";
+import Int "mo:base/Int";
+actor {
+  public func average_array(array : [Int]) : async Int {
+    var sum = 0;
+    var n = 1
+    for(val in array.vals()){
+      sum += val;
+      ave=sum/n
+    };
+    return(ave)
+  }
+}
 ```
 2.Character count: Write a function that takes in a string and a character, and returns the number of occurrences of that character in the string.
 ```
