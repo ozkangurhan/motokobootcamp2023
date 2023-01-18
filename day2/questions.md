@@ -61,16 +61,13 @@ actor {
 import Array "mo:base/Array";
 import Int "mo:base/Int";
 actor {
-  public func average_array(array : [Int]) : async Int {
-    var sum = 0;
-    var n = 1
-    for(val in array.vals()){
-      sum += val;
-      ave=sum/n
+  public query func average_array(array: [Int]) : async Int {
+    var sum: Int = 0;
+    for (i in array.vals()) {
+      sum += i;
     };
-    return(ave)
-  }
-}
+    sum / array.size();
+};
 ```
 2.Character count: Write a function that takes in a string and a character, and returns the number of occurrences of that character in the string.
 ```
