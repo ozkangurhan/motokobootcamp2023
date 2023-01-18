@@ -4,15 +4,15 @@
 
 A: Account owner
 
-#2.What is the subnet of the canister with the id:…? How many nodes are running on this subnet?
+**2.What is the subnet of the canister with the id:…? How many nodes are running on this subnet?**
 
 A:The subnetID: "pae4o-o6dxf-xki7q-ezclx-znyd6-fnk6w-vkv5z-5lfwh-xym2i-otrrw-fqe"  with 16 nodes.
 
-3.I have a neutron with 10 ICPs locked with a dissolve delay of 4 years - my neuron has been locked for 2 years. What is my expected voting power?
+**3.I have a neutron with 10 ICPs locked with a dissolve delay of 4 years - my neuron has been locked for 2 years. What is my expected voting power?**
 
 A: 16.875 (with the linear scale of 4 years dissolve and 2 years locked)
 
-4.What is the issue with the following code sample? 
+**4.What is the issue with the following code sample?** 
 
 A:  Need to add “import Nat “mo:base/Nat” “in the beginning, two variables "n" and "t" are not utilized.
 ```
@@ -26,7 +26,7 @@ actor {
  
 }
 ```
-5.What is the issue with the following code sample? 
+**5.What is the issue with the following code sample?** 
 
 A: need to replace “var Text” with “Text”
 ```
@@ -39,7 +39,7 @@ actor {
  
 }
 ```
-6.What is wrong with the following code?
+**6.What is wrong with the following code?**
 
 A: Add “import Array “mo:base/Array” “ in the beginning.
 ```
@@ -56,7 +56,7 @@ actor {
 
 # <a id="coding-challenges"> Coding challenges </a>
 
-1.Write a function average_array that takes an array of integers and returns the average value of the elements in the array.
+**1.Write a function average_array that takes an array of integers and returns the average value of the elements in the array.**
 ```
 import Array "mo:base/Array";
 import Int "mo:base/Int";
@@ -69,7 +69,7 @@ actor {
     sum / array.size();
 };
 ```
-2.Character count: Write a function that takes in a string and a character, and returns the number of occurrences of that character in the string.
+**2.Character count: Write a function that takes in a string and a character, and returns the number of occurrences of that character in the string.**
 ```
 import Nat "mo:base/Nat";
 import Char "mo:base/Char";
@@ -85,7 +85,7 @@ public query func count_character(t: Text, c: Char) : async Nat {
     count;
   };
 ``` 
-3.Write a function factorial that takes a natural number n and returns the factorial of n.
+**3.Write a function factorial that takes a natural number n and returns the factorial of n.**
 ```
 import Nat "mo:base/Nat";
 import Iter "mo:base/Iter";
@@ -98,7 +98,7 @@ public query func factorial(n: Nat) : async Nat {
     result;
   };
 ``` 
-4.Write a function number_of_words that takes a sentence and returns the number of words in the sentence.
+**4.Write a function number_of_words that takes a sentence and returns the number of words in the sentence.**
 ```
 import Nat "mo:base/Nat";
 import Text "mo:base/Text";
@@ -113,7 +113,7 @@ public query func number_of_words(t: Text) : async Nat {
     count;
   };
 ``` 
-5. Write a function find_duplicates that takes an array of natural numbers and returns a new array containing all duplicate numbers. The order of the elements in the returned array should be the same as the order of the first occurrence in the input array.
+**5. Write a function find_duplicates that takes an array of natural numbers and returns a new array containing all duplicate numbers. The order of the elements in the returned array should be the same as the order of the first occurrence in the input array.**
 ```
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
@@ -144,7 +144,7 @@ public query func find_duplicates(a: [Nat]) : async [Nat] {
   };
 
 ``` 
-6.Write a function convert_to_binary that takes a natural number n and returns a string representing the binary representation of n.
+**6.Write a function convert_to_binary that takes a natural number n and returns a string representing the binary representation of n.**
 ```
 import List "mo:base/List";
 import Nat "mo:base/Nat";
