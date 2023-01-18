@@ -144,3 +144,29 @@ public query func find_duplicates(a: [Nat]) : async [Nat] {
   };
 
 ``` 
+6.Write a function convert_to_binary that takes a natural number n and returns a string representing the binary representation of n.
+```
+import List "mo:base/List";
+import Nat "mo:base/Nat";
+import Text "mo:base/Text";
+actor {
+public func convert_to_binary(n : Nat) : async Text {
+   var ct : Text = "";
+   var lc = List.nil<Nat>();
+   var div : Nat = n;
+   while (div > 0) {
+      var z : Nat = div % 2;
+      div := div / 2;
+      lc := List.push(z, lc);
+     };
+     var rep : [Nat] = List.toArray(lc);
+     for (value in rep.vals()){
+      ct := ct 
+      Nat.toText(value);
+    };
+    return ct;
+  };
+  
+}
+
+``` 
