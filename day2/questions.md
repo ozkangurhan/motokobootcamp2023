@@ -10,7 +10,7 @@ A:
 
 3.I have a neutron with 10 ICPs locked with a dissolve delay of 4 years - my neuron has been locked for 2 years. What is my expected voting power?
 
-A: 
+A: 16.875 (with the linear scale of 4 years dissolve and 2 years locked)
 
 4.What is the issue with the following code sample? 
 
