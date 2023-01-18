@@ -91,7 +91,8 @@ public query func count_character(t: Text, c: Char) : async Nat {
       };
     };
     number;
-  };
+  }
+ }
 ``` 
 **3.Write a function factorial that takes a natural number n and returns the factorial of n.**
 ```
