@@ -6,7 +6,7 @@ A: Account owner
 
 **2.What is the subnet of the canister with the id:…? How many nodes are running on this subnet?**
 
-A:The subnetID: ""  with 16 nodes.
+A:The controller ID: "a3hwk-dyaaa-aaaab-qaa4a-cai" The subnetID: ""  with 16 nodes.
 
 **3.I have a neutron with 10 ICPs locked with a dissolve delay of 4 years - my neuron has been locked for 2 years. What is my expected voting power?**
 
