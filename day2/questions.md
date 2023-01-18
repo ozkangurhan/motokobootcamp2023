@@ -28,7 +28,7 @@ actor {
 ```
 5.What is the issue with the following code sample? 
 
-A: remove "var",replace “var Text” with “Text”
+A: need to replace “var Text” with “Text”
 ```
 actor {
   var languages : [var Text] = ["English", "German", "Chinese", "Japanese", "French"];
