@@ -1,6 +1,6 @@
  #<a id="questions"> 🙋 Questions </a>
 
-1. Who controls the ledger canister?
+1.Who controls the ledger canister?
 A: Account owner
 
 What is the subnet of the canister with the id:…? How many nodes are running on this subnet?
