@@ -88,7 +88,6 @@ public query func count_character(t: Text, c: Char) : async Nat {
 3.Write a function factorial that takes a natural number n and returns the factorial of n.
 ```
 import Nat "mo:base/Nat";
-import Char "mo:base/Char";
 import Iter "mo:base/Iter";
 actor {
 public query func factorial(n: Nat) : async Nat {
@@ -98,4 +97,51 @@ public query func factorial(n: Nat) : async Nat {
     };
     result;
   };
+``` 
+4.Write a function number_of_words that takes a sentence and returns the number of words in the sentence.
+```
+import Nat "mo:base/Nat";
+import Text "mo:base/Text";
+actor {
+public query func number_of_words(t: Text) : async Nat {
+    var count: Nat = 0;
+    var delimiter : Text = " ";
+    let words = Text.split(t, #char ' ');
+    Iter.iterate<Text>(words, func(x, _index) {
+      count += 1;
+    });
+    count;
+  };
+``` 
+5. Write a function find_duplicates that takes an array of natural numbers and returns a new array containing all duplicate numbers. The order of the elements in the returned array should be the same as the order of the first occurrence in the input array.
+```
+import Nat "mo:base/Nat";
+import Array "mo:base/Array";
+import Buffer "mo:base/Buffer";
+actor {
+public query func find_duplicates(a: [Nat]) : async [Nat] {
+    var n : Nat = 0;
+    var current: Nat = 0;
+    let arrayBuffer = Buffer.Buffer<Nat>(1);
+    let uniqueArrayBuffer = Buffer.Buffer<Nat>(1);
+    for (k in a.vals()) {
+      if(Buffer.contains<Nat>(uniqueArrayBuffer, k, Nat.equal) == false){
+        uniqueArrayBuffer.add(k);
+      }
+    };
+    for (k in uniqueArrayBuffer.vals()) {
+      n := 0;
+      for(kk in a.vals()){
+        if(k == kk){
+          n += 1;
+        };
+      };
+    
+      if(n > 1){
+        arrayBuffer.add(k);
+      }   
+    };
+      Buffer.toArray(arrayBuffer);
+  };
+
 ``` 
