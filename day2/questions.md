@@ -71,5 +71,31 @@ actor {
 ```
 2.Character count: Write a function that takes in a string and a character, and returns the number of occurrences of that character in the string.
 ```
-
+import Nat "mo:base/Nat";
+import Char "mo:base/Char";
+import Text "mo:base/Text";
+actor {
+public query func count_character(t: Text, c: Char) : async Nat {
+    var count: Nat = 0;
+    for (i in t.chars()) {
+      if (i == c) {
+        count += 1;
+      };
+    };
+    count;
+  };
+``` 
+3.Write a function factorial that takes a natural number n and returns the factorial of n.
+```
+import Nat "mo:base/Nat";
+import Char "mo:base/Char";
+import Iter "mo:base/Iter";
+actor {
+public query func factorial(n: Nat) : async Nat {
+    var result: Nat = 1;
+    for (i in Iter.range(1, n)) {
+      result *= i;
+    };
+    result;
+  };
 ``` 
