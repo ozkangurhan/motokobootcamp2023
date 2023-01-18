@@ -137,14 +137,14 @@ import Buffer "mo:base/Buffer";
 actor {
 public query func find_duplicates(a: [Nat]) : async [Nat] {
     var n : Nat = 0;
-    let arrayBuffer = Buffer.Buffer<Nat>(1);
-    let uniqueArrayBuffer = Buffer.Buffer<Nat>(1);
+    let bb = Buffer.Buffer<Nat>(1);
+    let cbb = Buffer.Buffer<Nat>(1);
     for (k in a.vals()) {
-      if(Buffer.contains<Nat>(uniqueArrayBuffer, k, Nat.equal) == false){
-        uniqueArrayBuffer.add(k);
+      if(Buffer.contains<Nat>(cbb, k, Nat.equal) == false){
+        cbb.add(k);
       }
     };
-    for (k in uniqueArrayBuffer.vals()) {
+    for (k in cbb.vals()) {
       n := 0;
       for(kk in a.vals()){
         if(k == kk){
@@ -153,10 +153,10 @@ public query func find_duplicates(a: [Nat]) : async [Nat] {
       };
     
       if(n > 1){
-        arrayBuffer.add(k);
+        bb.add(k);
       }   
     };
-      Buffer.toArray(arrayBuffer);
+      Buffer.toArray(bb);
   };
 
 ``` 
