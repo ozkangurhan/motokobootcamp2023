@@ -83,13 +83,13 @@ import Char "mo:base/Char";
 import Text "mo:base/Text";
 actor {
 public query func count_character(t: Text, c: Char) : async Nat {
-    var count: Nat = 0;
+    var number: Nat = 0;
     for (k in t.chars()) {
       if (k == c) {
-        count += 1;
+        number += 1;
       };
     };
-    count;
+    number;
   };
 ``` 
 **3.Write a function factorial that takes a natural number n and returns the factorial of n.**
