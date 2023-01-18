@@ -74,6 +74,10 @@ actor {
 ```
 **2.Character count: Write a function that takes in a string and a character, and returns the number of occurrences of that character in the string.**
 ```
+count_character(t : Text, c : Char) -> async Nat
+```
+
+```
 import Nat "mo:base/Nat";
 import Char "mo:base/Char";
 import Text "mo:base/Text";
