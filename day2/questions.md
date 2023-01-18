@@ -63,8 +63,8 @@ import Int "mo:base/Int";
 actor {
   public query func average_array(array: [Int]) : async Int {
     var sum: Int = 0;
-    for (i in array.vals()) {
-      sum += i;
+    for (k in array.vals()) {
+      sum += k;
     };
     sum / array.size();
 };
@@ -77,8 +77,8 @@ import Text "mo:base/Text";
 actor {
 public query func count_character(t: Text, c: Char) : async Nat {
     var count: Nat = 0;
-    for (i in t.chars()) {
-      if (i == c) {
+    for (k in t.chars()) {
+      if (k == c) {
         count += 1;
       };
     };
@@ -92,8 +92,8 @@ import Iter "mo:base/Iter";
 actor {
 public query func factorial(n: Nat) : async Nat {
     var result: Nat = 1;
-    for (i in Iter.range(1, n)) {
-      result *= i;
+    for (k in Iter.range(1, n)) {
+      result *= k;
     };
     result;
   };
@@ -105,7 +105,7 @@ import Text "mo:base/Text";
 actor {
 public query func number_of_words(t: Text) : async Nat {
     var count: Nat = 0;
-    var delimiter : Text = " ";
+    var space : Text = " ";
     let words = Text.split(t, #char ' ');
     Iter.iterate<Text>(words, func(x, _index) {
       count += 1;
@@ -121,7 +121,6 @@ import Buffer "mo:base/Buffer";
 actor {
 public query func find_duplicates(a: [Nat]) : async [Nat] {
     var n : Nat = 0;
-    var current: Nat = 0;
     let arrayBuffer = Buffer.Buffer<Nat>(1);
     let uniqueArrayBuffer = Buffer.Buffer<Nat>(1);
     for (k in a.vals()) {
