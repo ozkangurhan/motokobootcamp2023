@@ -14,7 +14,7 @@ A: 16.875 (with the linear scale of 4 years dissolve and 2 years locked)
 
 **4.What is the issue with the following code sample?** 
 
-A:  Need to add “import Nat “mo:base/Nat” “in the beginning, two variables "n" and "t" are not utilized.
+A:  Need to add “import Nat “mo:base/Nat” “in the beginning.
 ```
 actor {
   let n : Nat = 50;
