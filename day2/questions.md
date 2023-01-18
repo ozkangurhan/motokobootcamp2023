@@ -2,7 +2,7 @@
 
 **1.Who controls the ledger canister?**
 
-A: Account owner
+A: Principal account
 
 **2.What is the subnet of the canister with the id:…? How many nodes are running on this subnet?**
 
