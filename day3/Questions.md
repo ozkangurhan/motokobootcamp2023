@@ -6,7 +6,7 @@ A: True
 
 **2.True or False: when I realize an update call, the boundary node will participate in the consensus but not during query calls.**
 
-A:
+A: False
 
 **3.True or False: I can create a certified variable that will certify the response of the following actor:** 
 
