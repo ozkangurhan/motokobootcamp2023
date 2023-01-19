@@ -1,6 +1,6 @@
  #<a id="questions"> 🙋 Questions </a>
 
-**1.rue or False: the Internet Computer has a unique public key that can be used to verify responses coming from any subnets.**
+**1.True or False: the Internet Computer has a unique public key that can be used to verify responses coming from any subnets.**
 
 A: True
 
