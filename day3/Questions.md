@@ -17,13 +17,6 @@ https://forum.dfinity.org/t/boundary-node-roadmap/15562
 
 **3.True or False: I can create a certified variable that will certify the response of the following actor:** 
 
-A: False. Need a hash tree.
-
-https://gist.github.com/nomeata/f325fcd2a6692df06e38adedf9ca1877 
-
-
-
-
 ```
 actor {
     public func hello(name : Text) : async Text {
@@ -31,3 +24,10 @@ actor {
     };
 }
 ```
+
+A: False. Need a hash tree.
+
+https://gist.github.com/nomeata/f325fcd2a6692df06e38adedf9ca1877 
+
+
+
