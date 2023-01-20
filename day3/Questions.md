@@ -25,7 +25,7 @@ actor {
 }
 ```
 
-A: False. Need a hash tree.
+A: False. Need hash tree.
 
 https://gist.github.com/nomeata/f325fcd2a6692df06e38adedf9ca1877 
 
