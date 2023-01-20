@@ -9,6 +9,7 @@ A: No. 4 GB
 A: As much as the 32-bit integer value; aprox.4.294 M
 
 **3.Can we safely upgrade a canister from interface A to interface B?**
+
 A: Yes
 ```
 actor {
