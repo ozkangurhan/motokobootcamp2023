@@ -9,3 +9,5 @@ module {
     var sx : Int = 0;
     let arrayD : [Int] = Array.sort(array, Int.compare);
     for (val in arrayD.vals()) {
+      if (val > fx) {
+         sx := first;
