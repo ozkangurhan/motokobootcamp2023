@@ -16,7 +16,7 @@ actor {
        };
        return sx;
      };
-public func remove_even(array: [Nat]) : async [Nat] {
+   public func remove_even(array: [Nat]) : async [Nat] {
         let buffer = Buffer.Buffer<Nat>(array.size());
         for (val in array.vals()) {
             if(val%2==1) {
