@@ -11,3 +11,8 @@ module {
     for (val in arrayD.vals()) {
       if (val > fx) {
          sx := fx;
+         fx := val;
+        };
+       };
+       return sx;
+     };
