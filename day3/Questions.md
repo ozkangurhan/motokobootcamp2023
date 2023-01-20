@@ -17,7 +17,9 @@ https://forum.dfinity.org/t/boundary-node-roadmap/15562
 
 **3.True or False: I can create a certified variable that will certify the response of the following actor:** 
 
-A: 
+A: True. 
+
+Worked. Canister ID: 4ey3y-zaaaa-aaaab-qac6q-cai
 ```
 actor {
     public func hello(name : Text) : async Text {
