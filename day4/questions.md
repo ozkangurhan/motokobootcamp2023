@@ -17,7 +17,7 @@ actor {
     return "Hello" # firstname # surname # " !";
   };
 }
-```motoko
+
 Interface B
 ```motoko
 actor {
