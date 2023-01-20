@@ -25,3 +25,13 @@ actor {
         };
         return buffer;
     };
+   func drop<T>(xs : [T], n : Nat) : [T] {
+        let buffer = Buffer.fromArray<T>(xs);
+        buffer.filterEntries(func(index, value) = index >= n);
+        return Buffer.toArray(buffer);
+    };
+    
+    public func dropNatArray(array : [Nat], n : Nat) : async [Nat] {
+        return drop<Nat>(array, n);
+    };
+}
