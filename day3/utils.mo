@@ -25,8 +25,8 @@ actor {
         };
         return buffer;
     };
-   func drop<T>(xs : [T], n : Nat) : [T] {
-        let buffer = Buffer.fromArray<T>(xs);
+   func drop<T>(pr : [T], n : Nat) : [T] {
+        let buffer = Buffer.fromArray<T>(pr);
         buffer.filterEntries(func(index, value) = index >= n);
         return Buffer.toArray(buffer);
     };
