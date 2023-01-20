@@ -3,7 +3,7 @@ import Int "mo:base/Int";
 import Array "mo:base/Array";
 import Buffer "mo:base/Buffer";
 
-module {
+actor {
    public func second_maximum(array : [Int]): Int {
     var fx : Int = 0;
     var sx : Int = 0;
@@ -16,3 +16,12 @@ module {
        };
        return sx;
      };
+public func remove_even(array: [Nat]) : async [Nat] {
+        let buffer = Buffer.Buffer<Nat>(array.size());
+        for (val in array.vals()) {
+            if(val%2==1) {
+                buffer.add(val);
+            };
+        };
+        return Buffer.toArray(buffer);
+    };
