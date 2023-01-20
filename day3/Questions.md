@@ -6,7 +6,7 @@ A: True
 
 **2.True or False: when I realize an update call, the boundary node will participate in the consensus but not during query calls.**
 
-A: False 
+A: False. Bondary nodes are just intermediaries, they do not participate in the consensus.
 
 https://forum.dfinity.org/t/boundary-node-roadmap/15562
 
