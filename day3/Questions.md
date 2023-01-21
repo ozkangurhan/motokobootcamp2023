@@ -8,7 +8,11 @@ https://internetcomputer.org/how-it-works/chain-key-technology/
 
 **2.True or False: when I realize an update call, the boundary node will participate in the consensus but not during query calls.**
 
-A: False. Bondary nodes are not part of the consensus mechanism,just intermediaries.
+A: True. When you make an "update call" to a canister, the boundary nodes will participate in the consensus protocol to validate and propagate the update to the rest of the network. This process is necessary to ensure that the state of the canister is updated correctly and that all nodes in the network have the same view of the state.
+
+On the other hand, when you make a "query call" to a canister, the boundary nodes do not participate in the consensus protocol. Instead, the query is handled by the canister's runtime, which can respond to the query directly without the need for consensus. This allows for faster and more efficient handling of read-only operations.
+
+It's important to note that query calls are only read-only operations and do not change the state of the canister, that's why there's no need for consensus. But in case of update calls, it will change the state of the canister, therefore the need for consensus.
 
 https://eprint.iacr.org/2021/632.pdf
 
