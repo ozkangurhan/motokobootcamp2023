@@ -22,3 +22,9 @@ actor  {
     public query func unique_test(l : List<Nat>) : async List<Nat> {
         return unique<Nat>(l, Nat.compare);
     };
+func reverse<T>(l : List<T>) : List<T> {
+        return List.reverse(l);
+    };
+    public func reverse_test(l : List<Nat>) : async List<Nat> {
+        return reverse(l);
+    };
