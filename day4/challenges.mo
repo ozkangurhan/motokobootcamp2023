@@ -18,7 +18,6 @@ actor  {
                 return Iter.toList(sorted);
             };
         };
-    };
 
     public query func unique_test(l : List<Nat>) : async List<Nat> {
         return unique<Nat>(l, Nat.compare);
