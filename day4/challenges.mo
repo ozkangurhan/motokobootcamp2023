@@ -14,7 +14,7 @@ actor  {
             case (null) { return List.nil() };
             case (?first) {
                 var xp = first;
-                let fx = Iter.filter<T>(sortediter, func(x : T) = (Order.isEqual(compare(x, xp))));
+                let fx = Iter.filter<T>(sortediter, func(x : T) = (Order.isEqual(compare(x, xp)));
                 return Iter.toList(sorted);
             };
         };
