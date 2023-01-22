@@ -2,7 +2,7 @@
 
 **1.Is the heap memory saved when upgrading a canister? How much heap memory does a canister has?**
 
-A: No. 4 GB
+A: No. 4 GB heap memory
 
 **2.How much accounts can a unique Principal own?**
 
