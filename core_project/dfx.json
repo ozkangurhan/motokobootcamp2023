@@ -1,0 +1,31 @@
+{
+  "canisters": {
+    "webpage": {
+      "main": "./src/webpage/main.mo",
+      "type": "motoko"
+    },
+    "dao": {
+      "main": "./src/dao/main.mo",
+      "type": "motoko"
+    },
+    "assets": {
+      "dependencies": [
+        "webpage",
+        "dao"
+      ],
+      "frontend": {
+        "entrypoint": "alt/index.html"
+      },
+      "source": [
+        "alt/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
