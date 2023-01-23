@@ -57,17 +57,17 @@ shared actor class DAO(init : Types.BasicDaoStableStorage) = Self {
     };
     public shared({caller}) func vote(args: Types.VoteArgs) : async Types.Result<Types.ProposalState, Text> {
         switch (proposal_get(args.proposal_id)) {
-        case null { #err("No proposal with ID " # debug_show(args.proposal_id) # " exists") };
+        case null { #err("No proposal " # debug_show(args.proposal_id) # " exists") };
         case (?proposal) {
                  var state = proposal.state;
                  if (state != #open) {
-                     return #err("Proposal " # debug_show(args.proposal_id) # " is not open for voting");
+                     return #err("Proposal " # debug_show(args.proposal_id) # "not existing");
                  };
                  switch (account_get(caller)) {
-                 case null { return #err("Caller does not have any tokens to vote with") };
+                 case null { return #err("No tokens") };
                  case (?{ amount_e8s = voting_tokens }) {
                           if (List.some(proposal.voters, func (e : Principal) : Bool = e == caller)) {
-                              return #err("Already voted");
+                              return #err("dublication");
                           };
                           
                           var votes_yes = proposal.votes_yes.amount_e8s;
