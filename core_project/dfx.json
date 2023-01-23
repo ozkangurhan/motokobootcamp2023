@@ -4,8 +4,8 @@
       "main": "./src/webpage/main.mo",
       "type": "motoko"
     },
-    "dao": {
-      "main": "./src/dao/main.mo",
+    "core_project": {
+      "main": "./src/core_project/main.mo",
       "type": "motoko"
     },
     "assets": {
@@ -26,6 +26,4 @@
     "build": {
       "packtool": ""
     }
-  },
-  "version": 1
 }
